@@ -1,0 +1,76 @@
+﻿doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/main.css')
+        link(rel='stylesheet', href='/stylesheets/update.css')
+    body
+        div(id="headerContainer")
+            h1 #{title}
+        form(method="POST" action="/flowers")
+
+        div(id="inputContainer")
+            a(href='/')
+                button(id='updateHomeButton' type='button') Home
+                button(id='updateResetButton' type='button') Reload Data
+        div(id="formContainer")
+            div(id="formContainer_Section1")
+                div(id="formContainer_Group3")
+                    div(class="updateInputWrapper")
+                        div(id="thumbnailContainer" style="height: fit-content; width: fit-content")
+                            p Click to upload image
+                            img(class='thumbnailImg', src='', alt='Thumbnail' hidden)
+                        label(for="image_url" style="color: #fb7272;")
+                        input(type="file" id="image_url" class='updateForm' name="image_url")
+            div(id="formContainer_Section2")
+                div(id="formContainer_Group1")
+                    div(class='updateInputWrapper' style="display: none;")
+                        label(for="id" hidden) Id
+                        input(type="text" id="id" class='updateForm' name="id" hidden)
+                    div(class='updateInputWrapper' style="display: none;")
+                        label(for="image_id" hidden) Image Id
+                        input(type="text" id="image_id" class='updateForm' name="image_id" hidden)
+                    div(class='updateInputWrapper')
+                        label(for="name" style="color: #fb7272;") *Name
+                        input(id="name" class='updateForm' name="name" required)
+                        div(class='autocomplete-item')
+                    div(class='updateInputWrapper')
+                        label(for="purchased_from" style="color: #66d7fc;") Store
+                        input(type="text" id="purchased_from" class='updateForm' name="purchased_from")
+                        div(class='autocomplete-item')
+                    div(class='updateInputWrapper')
+                        label(for="color" style="color: #66d7fc;") Color
+                        input(type="text" id="color" class='updateForm' name="color")
+                        div(class='autocomplete-item')
+                    div(class='updateInputWrapper')
+                        label(for="notes" style="color: #66d7fc;") Notes
+                        textarea(id="notes" class='updateForm' name="notes")
+                        div(class='autocomplete-item')
+                div(id="formContainer_Group2")
+                    div(class='updateInputWrapper')
+                        label(for="height" style="color: #66d7fc;") Height
+                        select(id="height" class='updateForm' name="height")
+                        div(class='autocomplete-item')
+                    div(class='updateInputWrapper')
+                        label(for="bloom_width" style="color: #66d7fc;") Bloom Width
+                        select(id="bloom_width" class='updateForm' name="bloom_width")
+                        div(class='autocomplete-item')
+                    div(class='updateInputWrapper')
+                        label(for="tag_id" style="color: #fb7272;") *Tag ID
+                        input(type="number" id="tag_id" class='updateForm' name="tag_id" required)
+                        div(class='autocomplete-item')
+                    div(class='updateInputWrapper')
+                        label(for="location_id" style="color: #fb7272;") *Location ID
+                        select(id="location_id" class='updateForm' name="location_id" required)
+                        div(class='autocomplete-item')
+        div(id="submitContainer")
+            button(id="updateDataInDatabase" type="submit" value="UpdateDataInDatabase" onclick="updateDataInDatabase()") Update Flower
+        footer &copy; 2024 Dahlia Tracker
+        
+        script.
+            document.body.onload = function() {
+              var script = document.createElement('script');
+              script.src = '/js/updateIndex.js';
+              document.body.appendChild(script);
+            }
+

@@ -1,0 +1,71 @@
+﻿doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/main.css')
+        link(rel='stylesheet', href='/stylesheets/create.css')
+    body
+        div(id="headerContainer")
+            h1 #{title}
+        form(method="POST" action="/createFlower")
+        
+        div(id="inputContainer")
+            a(href='/')
+                button(id='createHomeButton' type='button') Home
+                button(id='createResetButton' type='button') Clear Form
+        div(id="formContainer")
+            div(id="formContainer_Section1")
+                div(id="formContainer_Group3")
+                    div(class='createInputWrapper')
+                        div(id="thumbnailContainer")
+                            p Click to upload image
+                            img(class='thumbnailImg', src='', alt='Thumbnail' hidden)
+                        label(for="image_url" style="color: #fb7272;")
+                        input(type="file" id="image_url" class='createForm' name="image_url")
+            div(id="formContainer_Section2")
+                div(id="formContainer_Group1")
+                    div(class='createInputWrapper' style="display: none;")
+                        label(for="id" hidden) Id
+                        input(type="text" id="id" class='createForm' name="id" hidden)
+                    div(class='createInputWrapper' style="display: none;")
+                        label(for="image_id" hidden) Image Id
+                        input(type="text" id="image_id" class='createForm' name="image_id" hidden)
+                    div(class='createInputWrapper')
+                        label(for="name" style="color: #fb7272;") *Name
+                        input(id="name" class='createForm' name="name" required)
+                        div(class='autocomplete-item')
+                    div(class='createInputWrapper')
+                        label(for="purchased_from" style="color: #66d7fc;") Store
+                        input(type="text" id="purchased_from" class='createForm' name="purchased_from")
+                        div(class='autocomplete-item')
+                    div(class='createInputWrapper')
+                        label(for="color" style="color: #66d7fc;") Color
+                        input(type="text" id="color" class='createForm' name="color")
+                        div(class='autocomplete-item')
+                    div(class='createInputWrapper')
+                        label(for="notes" style="color: #66d7fc;") Notes
+                        textarea(id="notes" class='createForm' name="notes")
+                        div(class='autocomplete-item')
+                div(id="formContainer_Group2")
+                    div(class="createInputWrapper")
+                        label(for="height" style="color: #66d7fc;") Height
+                        select(id="height" class='createForm' name="height")
+                        div(class='autocomplete-item')
+                    div(class="createInputWrapper")
+                        label(for="bloom_width" style="color: #66d7fc;") Bloom Width
+                        select(id="bloom_width" class='createForm' name="bloom_width")
+                        div(class='autocomplete-item')
+                    div(class="createInputWrapper")
+                        label(for="tag_id" style="color: #fb7272;") *Tag ID
+                        input(type="number" id="tag_id" class='createForm' name="tag_id" required)
+                        div(class='autocomplete-item')
+                    div(class="createInputWrapper")
+                        label(for="location_id" style="color: #fb7272;") *Location ID
+                        select(id="location_id" class='createForm' name="location_id" required)
+                        div(class='autocomplete-item')
+        div(id="submitContainer")
+            button(id="saveData" type="submit" value='SaveData' onclick='saveData()') Save Flower
+        footer &copy; 2024 Dahlia Tracker
+
+        script(src="/js/createIndex.js")
+        //- script(src="/js/selectOptions.js")

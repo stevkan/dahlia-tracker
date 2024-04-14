@@ -1,0 +1,11 @@
+-- database: d:\Personal\flower-blog-v1\flowers.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+SELECT * FROM flowers;
+
+
+DROP INDEX idx_unique_tag_id;
+
+
+CREATE UNIQUE INDEX idx_unique_combo ON flowers (location_id, tag_id);

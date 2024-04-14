@@ -1,0 +1,359 @@
+@media only screen and (max-width: 1284px) {
+  /* For mobile phones */
+  #tableContainer {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    overflow: auto;
+    margin: 1em 1em 3em 1em;
+  }
+
+  #data {
+    border-collapse: separate;
+    /* margin: 1.5em 1em 1em 1em; */
+    /* overflow: auto; */
+    /* max-height: 80vh; */
+    /* Allow the table to adjust its layout based on content */
+    width: 100%;
+    /* Make the table as wide as the viewport minus the margins */
+    font-size: 1.5em;
+    table-layout: fixed;
+  }
+
+  #data tr,
+  #data td {
+    border: 1px solid white;
+    padding: 4px;
+    white-space: normal;
+    /* Allow the text to wrap */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  #data thead td {
+    cursor: pointer;
+  }
+
+  #data tr:nth-child(even) {
+    background-color: #181818;
+  }
+
+  #data tr:nth-child(odd) {
+    background-color: #212121;
+  }
+
+  #data thead tr {
+    background-color: inherit;
+    color: inherit;
+    cursor: default;
+  }
+
+  #data tbody tr.selected {
+    background-color: #575757 !important;
+  }
+
+  #data tbody tr:hover {
+    background-color: #757575;
+  }
+
+  #data #col-12,
+  #data #col-13 {
+    padding: 0 0.50em !important;
+  }
+
+  #data #updateButton,
+  #data #deleteButton {
+    font-size: 1em;
+    width: 100%;
+    padding-inline: 0;
+  }
+
+  #data select,
+  #data select option,
+  #data select option>* {
+    background-color: #181818;
+    color: white;
+  }
+
+  #data select.to-do {
+    background-color: darkred;
+    color: white;
+  }
+
+  #data select.investigating {
+    background-color: orange;
+    color: black;
+  }
+
+  #data select.waiting-on-internal-task {
+    background-color: yellow;
+    color: black;
+  }
+
+  #data select.waiting-on-customer {
+    background-color: green;
+    color: white;
+  }
+
+  #data select.done {
+    background-color: blue;
+    color: white
+  }
+
+  #data .edit-checkbox,
+  #data .delete-checkbox {
+    transform: scale(1.25);
+  }
+
+  /* .header {width: 100%;} */
+
+  #col-1 {width: 4%;} /* Id */
+  #col-2 {width: 10%;} /* Image ID */
+  #col-3 {width: 4%;} /* Image Url */
+  #col-4 {width: 15%;} /* Name */
+  #col-5 {width: 15%;} /* Purchased From */
+  #col-6 {width: 10%;} /* Color */
+  #col-7 {width: 4%;} /* Height */
+  #col-8 {width: 5%;} /* Bloom Width */
+  #col-9 {width: 5%;} /* Tag Id */
+  #col-10 {width: 5%;} /* Location Id */
+  #col-11 {width: 25%;} /* Notes */
+  #col-12 {width: 4%;} /* Edit Checkbox */
+  #col-13 {width: 4%;} /* Delete Checkbox */
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1284px) {
+  /* For mobile phones */
+  #tableContainer {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    overflow: auto;
+    margin: 1em 1em 3em 1em;
+  }
+
+  #data {
+    border-collapse: separate;
+    /* margin: 1.5em 1em 1em 1em; */
+    /* overflow: auto; */
+    /* max-height: 80vh; */
+    /* Allow the table to adjust its layout based on content */
+    width: 100%;
+    /* Make the table as wide as the viewport minus the margins */
+    font-size: 1.25em;
+    table-layout: fixed;
+  }
+
+  #data tr,
+  #data td {
+    border: 1px solid white;
+    padding: 4px;
+    white-space: normal;
+    /* Allow the text to wrap */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  #data thead td {
+    cursor: pointer;
+  }
+
+  #data tr:nth-child(even) {
+    background-color: #181818;
+  }
+
+  #data tr:nth-child(odd) {
+    background-color: #212121;
+  }
+
+  #data thead tr {
+    background-color: inherit;
+    color: inherit;
+    cursor: default;
+  }
+
+  #data tbody tr.selected {
+    background-color: #575757 !important;
+  }
+
+  #data tbody tr:hover {
+    background-color: #757575;
+  }
+
+  #data #updateButton,
+  #data #deleteButton {
+    font-size: 1em;
+  }
+
+  #data select,
+  #data select option,
+  #data select option>* {
+    background-color: #181818;
+    color: white;
+  }
+
+  #data select.to-do {
+    background-color: darkred;
+    color: white;
+  }
+
+  #data select.investigating {
+    background-color: orange;
+    color: black;
+  }
+
+  #data select.waiting-on-internal-task {
+    background-color: yellow;
+    color: black;
+  }
+
+  #data select.waiting-on-customer {
+    background-color: green;
+    color: white;
+  }
+
+  #data select.done {
+    background-color: blue;
+    color: white
+  }
+
+  #data .edit-checkbox,
+  #data .delete-checkbox {
+    transform: scale(1.25);
+  }
+
+  /* .header {width: 100%;} */
+
+  #col-1 {width: 4%;} /* Id */
+  #col-2 {width: 10%;} /* Image ID */
+  #col-3 {width: 4%;} /* Image Url */
+  #col-4 {width: 15%;} /* Name */
+  #col-5 {width: 15%;} /* Purchased From */
+  #col-6 {width: 10%;} /* Color */
+  #col-7 {width: 4%;} /* Height */
+  #col-8 {width: 4%;} /* Bloom Width */
+  #col-9 {width: 4%;} /* Tag Id */
+  #col-10 {width: 4%;} /* Location Id */
+  #col-11 {width: 25%;} /* Notes */
+  #col-12 {width: 4%;} /* Edit Checkbox */
+  #col-13 {width: 4%;} /* Delete Checkbox */
+}
+
+@media only screen and (min-width: 1285px) {
+  /* For desktop: */
+  #tableContainer {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    overflow: auto;
+    margin: 1em 1em 3em 1em;
+  }
+
+  #data {
+    border-collapse: separate;
+    /* margin: 1.5em 1em 1em 1em; */
+    /* overflow: auto; */
+    /* max-height: 80vh; */
+    /* Allow the table to adjust its layout based on content */
+    width: 100%;
+    /* Make the table as wide as the viewport minus the margins */
+    font-size: 1em;
+    table-layout: fixed;
+  }
+
+  #data tr,
+  #data td {
+    border: 1px solid white;
+    padding: 4px;
+    white-space: normal;
+    /* Allow the text to wrap */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  #data thead td {
+    cursor: pointer;
+  }
+
+  #data tr:nth-child(even) {
+    background-color: #181818;
+  }
+
+  #data tr:nth-child(odd) {
+    background-color: #212121;
+  }
+
+  #data thead tr {
+    background-color: inherit;
+    color: inherit;
+    cursor: default;
+  }
+
+  #data tbody tr.selected {
+    background-color: #575757 !important;
+  }
+
+  #data tbody tr:hover {
+    background-color: #757575;
+  }
+
+  #data #updateButton,
+  #data #deleteButton {
+    font-size: 1em;
+  }
+
+  #data select,
+  #data select option,
+  #data select option>* {
+    background-color: #181818;
+    color: white;
+  }
+
+  #data select.to-do {
+    background-color: darkred;
+    color: white;
+  }
+
+  #data select.investigating {
+    background-color: orange;
+    color: black;
+  }
+
+  #data select.waiting-on-internal-task {
+    background-color: yellow;
+    color: black;
+  }
+
+  #data select.waiting-on-customer {
+    background-color: green;
+    color: white;
+  }
+
+  #data select.done {
+    background-color: blue;
+    color: white
+  }
+
+  #data .edit-checkbox,
+  #data .delete-checkbox {
+    transform: scale(1.25);
+    cursor: pointer;
+  }
+
+  #col-1 {width: 4%;} /* Id */
+  #col-2 {width: 10%;} /* Image ID */
+  #col-3 {width: 4%;} /* Image Url */
+  #col-4 {width: 20%;} /* Name */
+  #col-5 {width: 15%;} /* Purchased From */
+  #col-6 {width: 10%;} /* Color */
+  #col-7 {width: 4%;} /* Height */
+  #col-8 {width: 4%;} /* Bloom Width */
+  #col-9 {width: 4%;} /* Tag Id */
+  #col-10 {width: 4%;} /* Location Id */
+  #col-11 {width: 25%;} /* Notes */
+  #col-12 {width: 4%;} /* Edit Checkbox */
+  #col-13 {width: 4%;} /* Delete Checkbox */
+}

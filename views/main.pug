@@ -1,0 +1,29 @@
+﻿doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/main.css')
+        link(rel='stylesheet', href='/stylesheets/table.css')
+    body
+        #inputContainer
+            button(type="button" id="reloadButton") Reload Data
+            a(href='create')
+                button(type='button' id="createButton") New Flower
+
+        #filterContainer 
+            input#filter(type="text", placeholder="Filter table...")
+
+        #headerContainer
+            h1(style="text-align: center; color: white;") #{title}
+
+        #tableContainer
+          table#data(data-title="Flower Data" data-lang="js")
+        script.
+            document.body.onload = function() {
+              var mainScript = document.createElement('script');
+              mainScript.src = '/js/mainIndex.js';
+              document.body.appendChild(mainScript);
+              //- var selectOptions = document.createElement('script');
+              //- selectOptions.src = '/js/selectOptions.js';
+              //- document.body.appendChild(selectOptions);
+            }

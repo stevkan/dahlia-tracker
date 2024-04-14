@@ -1,0 +1,280 @@
+﻿@media only screen and (max-width: 1284px) {
+  /* For mobile phones */
+  body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  #headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0 2em 0;
+  }
+
+  #inputContainer,
+  #filterContainer {
+    display: flex;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    margin: 1em 1em 3em 1em;
+  }
+
+  #inputContainer {
+    left: 0;
+    align-items: flex-start;
+  }
+
+  #filterContainer {
+    right: 0;
+    align-items: flex-end;
+  }
+
+  #inputContainer a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  #inputContainer button,
+  #filterContainer input,
+  #inputContainer a button {
+    font-size: 2em;
+    /* color: black; */
+  }
+
+  #inputContainer button,
+  #inputContainer a button {
+    margin-bottom: 1em;
+    /* border-style: hidden;
+    border-radius: 0; */
+    width: 7.5em;
+    min-width: 7em;
+    font-size: 1.75em;
+  }
+
+  #filterContainer input {
+    font-size: 1.75em;
+    height: 1.25em;
+    width: 8em;
+  }
+
+  h1 {
+    font-size: 4em;
+    margin: 0;
+  }
+
+  #filepath {
+    border: 1px solid white;
+    color: white;
+    background-color: #313131;
+    padding: 8px;
+    width: 145px;
+    height: 16px;
+    text-align: center;
+  }
+
+  input, button {
+    border-style: hidden;
+    border-radius: 0;
+    color: black;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1284px) {
+  /* For mobile phones */
+  body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  #headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 1em 0;
+  }
+
+  #inputContainer,
+  #filterContainer {
+    display: flex;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    margin: 1em 1em 3em 1em;
+  }
+
+  #inputContainer {
+    left: 0;
+    align-items: flex-start;
+  }
+
+  #filterContainer {
+    right: 0;
+    align-items: flex-end;
+  }
+
+  #inputContainer a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  #inputContainer button,
+  #filterContainer input,
+  #inputContainer a button {
+    /* font-size: 1em;
+    color: black; */
+  }
+
+  #inputContainer button,
+  #inputContainer a button {
+    margin-bottom: 1em;
+    /* border-style: hidden;
+    border-radius: 0; */
+    width: 10em;
+    min-width: 8em;
+    font-size: 1em;
+  }
+
+  #filterContainer input {
+    font-size: 1em;
+    height: 1.25em;
+    width: 10em;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  #filepath {
+    border: 1px solid white;
+    color: white;
+    background-color: #313131;
+    padding: 8px;
+    width: 145px;
+    height: 16px;
+    text-align: center;
+  }
+
+  input, button {
+    font-size: 1em;
+    border-style: hidden;
+    border-radius: 0;
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 1285px) {
+  /* For desktop: */
+  body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  #headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0 2em 0;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  #inputContainer,
+  #filterContainer {
+    display: flex;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    margin: 1em 1em 3em 1em;
+  }
+
+  #inputContainer {
+    left: 0;
+    align-items: flex-start;
+  }
+
+  #filterContainer {
+    right: 0;
+    align-items: flex-end;
+  }
+
+  #inputContainer a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  #inputContainer button,
+  #filterContainer input,
+  #inputContainer a button {
+    /* font-size: 1em; */
+    /* color: black; */
+  }
+
+  #inputContainer button,
+  #inputContainer a button {
+    margin-bottom: 1em;
+    /* border-style: hidden;
+    border-radius: 0; */
+    width: 7.5em;
+    min-width: 7em;
+  }
+
+  #filterContainer input {
+    font-size: 1em;
+    height: 1.25em;
+    width: 15em;
+  }
+
+  #filepath {
+    border: 1px solid white;
+    color: white;
+    background-color: #313131;
+    padding: 8px;
+    width: 145px;
+    height: 16px;
+    text-align: center;
+  }
+
+  input, button {
+    font-size: 1em;
+    border-style: hidden;
+    border-radius: 0;
+    color: black;
+    text-align: center;
+  }
+}
