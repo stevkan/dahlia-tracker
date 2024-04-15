@@ -9,6 +9,7 @@
   },
   "author": "Steven Kanberg",
   "license": "MIT",
+  "cpu" : [ "x64" ],
   "dependencies": {
     "@azure/storage-file-share": "^12.17.0",
     "better-sqlite3": "^9.4.3",
