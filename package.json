@@ -5,8 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "watch": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "nodemon app.js"
   },
   "author": "Steven Kanberg",
   "license": "MIT",
@@ -26,5 +25,11 @@
   },
   "engines": {
     "node": "~18.20.2"
+  },
+  "devDependencies": {
+    "assert": "^2.1.0",
+    "mocha": "^10.4.0",
+    "sinon": "^17.0.1",
+    "supertest": "^6.3.4"
   }
 }

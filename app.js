@@ -99,7 +99,7 @@ app.get('/getFlowers', async (req, res) => {
   try {
     const statement = await db.prepare('SELECT * FROM flowers');
     const rows = await statement.all();
-    res.send(JSON.stringify(rows));
+    res.status(200).send(JSON.stringify(rows));
   } catch (err) {
     console.error(err);
     res.status(500).send('Internal Server Error');
