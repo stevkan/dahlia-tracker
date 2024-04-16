@@ -92,7 +92,7 @@ const loadData = async () => {
     method: 'GET',
     redirect: 'follow',
   };
-  const response = await fetch('http://localhost:6550/getFlowers', requestOptions);
+  const response = await fetch('https://dahlia-tracker.azurewebsites.net/getFlowers', requestOptions);
   if (response.ok) {
     const resp = await response.json();
     if (resp) {
@@ -119,7 +119,7 @@ const deleteSelected = async (checked) => {
     body: raw,
     redirect: 'follow',
   };
-  const response = await fetch(`http://localhost:6550/deleteFlowers`, requestOptions);
+  const response = await fetch(`https://dahlia-tracker.azurewebsites.net/deleteFlowers`, requestOptions);
   console.log('DELETE RESPONSE ', response);
   if (response.ok) {
     console.log('Successfully deleted image');

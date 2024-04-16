@@ -71,7 +71,7 @@ app.set('view engine', 'pug');
 
 app.use(
   cors({
-    origin: ['http://localhost:6550', 'http://localhost:6550'],
+    origin: ['https://dahlia-tracker.azurewebsites.net', 'https://dahlia-tracker.azurewebsites.net'],
     credentials: false,
   })
 );

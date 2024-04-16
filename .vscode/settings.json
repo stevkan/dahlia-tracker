@@ -1,4 +1,8 @@
 {
   "appService.defaultWebAppToDeploy": "/subscriptions/c4dfdf71-1cca-4bb4-8b21-2d24819f71f5/resourceGroups/dahlia-tracker_group/providers/Microsoft.Web/sites/dahlia-tracker",
-  "appService.deploySubpath": "."
+  "appService.deploySubpath": ".",
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ]
 }

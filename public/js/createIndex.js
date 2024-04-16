@@ -79,7 +79,7 @@ const saveData = async () => {
         redirect: 'follow',
       };
     
-      const response = await fetch('http://localhost:6550/createFlower', requestOptions);
+      const response = await fetch('https://dahlia-tracker.azurewebsites.net/createFlower', requestOptions);
       if (response.ok) {
         alert('Data saved successfully!');
       } else {
@@ -334,7 +334,7 @@ async function getFlowers() {
     redirect: 'follow'
   };
   
-  const response = await fetch('http://localhost:6550/getFlowers', requestOptions);
+  const response = await fetch('https://dahlia-tracker.azurewebsites.net/getFlowers', requestOptions);
   if (response.ok) {
     return await response.json();
   } else {
@@ -361,7 +361,7 @@ async function getFlowers() {
 //       },
 //       redirect: 'follow',
 //     };
-//     const res = await fetch('http://localhost:6550/api/generateSAS', requestOptions);
+//     const res = await fetch('https://dahlia-tracker.azurewebsites.net/api/generateSAS', requestOptions);
 //     const shared = await res.json();
 //     localStorage.setItem('sharedSAS', shared.sharedAccessSignature);
 //     return shared;

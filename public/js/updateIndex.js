@@ -64,7 +64,7 @@ const importDataIntoForm = async () => {
     redirect: 'follow',
   };
   const response = await fetch(
-    `http://localhost:6550/getFlower/${editColumnId}`,
+    `https://dahlia-tracker.azurewebsites.net/getFlower/${editColumnId}`,
     requestOptions
   );
   if (response.ok) {
@@ -132,7 +132,7 @@ const updateDataInDatabase = async () => {
       body: raw,
       redirect: 'follow',
     };
-    const response = await fetch(`http://localhost:6550/updateFlower`, requestOptions);
+    const response = await fetch(`https://dahlia-tracker.azurewebsites.net/updateFlower`, requestOptions);
     if (response.ok) {
       thumbnailImg.src = row.image_url;
       alert('Data saved successfully!');
@@ -381,7 +381,7 @@ async function getFlowers() {
     redirect: 'follow'
   };
   
-  const response = await fetch('http://localhost:6550/getFlowers', requestOptions);
+  const response = await fetch('https://dahlia-tracker.azurewebsites.net/getFlowers', requestOptions);
   if (response.ok) {
     return await response.json();
   } else {
