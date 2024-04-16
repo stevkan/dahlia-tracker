@@ -14,10 +14,6 @@ function filterRows() {
   // Loop through table rows
   const rows = document.querySelectorAll('#data tbody tr');
   rows.forEach(row => {
-    console.log('ROW ', row.innerText);
-    // if (row.textContent === 'IDIssue IDRepositoryTitleIssue URLState') {
-    //   return;
-    // }
     let rowVisible = false;
     const cells = row.querySelectorAll('td');
     cells.forEach(cell => {

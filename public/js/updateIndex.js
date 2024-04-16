@@ -116,7 +116,7 @@ const updateDataInDatabase = async () => {
       whereId: outputs[1].value,                                    // 1 => WhereId
     };
     
-    if (row.name === '' || row.tag_id === '' || row.location_id === '' || row.image_id) {
+    if (row.name === '' || row.tag_id === '' || row.location_id === '' || row.image_id === '') {
       alert('Required fields are missing');
       return;
     }
