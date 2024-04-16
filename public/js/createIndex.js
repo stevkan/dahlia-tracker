@@ -5,8 +5,8 @@ const thumbnailContainer = document.querySelector('#thumbnailContainer'); // Ass
 const inputs = {};
 imgInput.addEventListener('change', async (e) => {
   const file = imgInput.files[0];
-  if (!(file.name.includes(".jpg") || file.name.includes(".gif") || file.name.includes(".heic") ||file.name.includes(".png") || file.name.includes(".webp"))) {
-    alert("Only JPEG, GIF, PNG, and WEBP image types are allowed");
+  if (!(file.name.includes(".jpeg") ||file.name.includes(".jpg") || file.name.includes(".gif") || file.name.includes(".heic") || file.name.includes(".heif") || file.name.includes(".png") || file.name.includes(".webp"))) {
+    alert("Only JPG/JPEG, GIF, HEIC/HEIF, PNG, and WEBP image types are allowed");
     return;
   }
   if (file) {
@@ -24,7 +24,7 @@ imgInput.addEventListener('change', async (e) => {
     const name = document.getElementById('name');
     name.value = imageName;
     
-    if (inputs.name === '' && inputs.tag_id === '' && inputs.location_id === '' && inputs.image_id) {
+    if (inputs.name === '' && inputs.tag_id === '' && inputs.location_id === '' && inputs.image_id === '') {
       alert('Required fields are missing');
       return;
     }
